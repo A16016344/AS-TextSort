@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Array</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+    <style>
+         .capitalize { text-transform: capitalize; } 
+    </style>
+    <div class="container">
+        <br>
+        <form class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="txtUrl"><h5 class="card-title">TXT URL:</h5></label>
+                    <input type="text" value="nameList.txt" class="form-control" id="txtUrl" aria-describedby="emailHelp">
+                    <small id="txtURL" class="form-text text-muted">Introduce un URL con una lista de nombres, un nombre por linea.</small>
+                </div>
+                <button id="leerTxt" type="submit" class="btn btn-primary">Leer</button>                
+            </div>
+
+        </form>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Lista de nombres:</h5>
+                <p class="card-text" id="resultado"></p>
+                <button id="ordenarLista" class="btn btn-primary">Ordenar Lista</button>                
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
